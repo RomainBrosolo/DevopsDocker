@@ -17,6 +17,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          tag-custom: latest
           push: false
           tags: ${{ secrets.DOCKER_USERNAME }}/angularweb:${{ github.sha }}
 
