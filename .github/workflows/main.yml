@@ -17,7 +17,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: romainbrosolo/devopsdocker:latest
+          tags: romainbrs/angularweb:latest
 
       - name: Deploy to Docker Hub
         uses: docker/login-action@v1
@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: romainbrosolo/devopsdocker:latest
+          tags: romainbrs/angularweb:latest
